@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+#site_header{
+    background-color: white;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo_img{
+    margin: 1rem 0;
+    width: 50px;
+    margin-right: 25px;
+}
+
+#level{
+    width: 75%;
+}
