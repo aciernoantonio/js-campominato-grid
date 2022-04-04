@@ -17,6 +17,13 @@ body{
     margin: auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.logo_section,
+.form_section{
+    display: flex;
+    align-items: center;
 }
 
 .logo_img{
@@ -25,8 +32,13 @@ body{
     margin-right: 25px;
 }
 
-#level{
-    width: 75%;
+#play{
+    background-color: lightgray;
+    padding: 0.5rem 1rem;
+    border-style: none;
+    border-radius: 20px;
+    margin: 0 1rem;
+    text-decoration: none;
 }
 
 .cells{

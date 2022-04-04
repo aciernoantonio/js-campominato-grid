@@ -28,9 +28,11 @@ function difficultLevel(){
 
 //seleziono il container dove andranno le celle
 const containerElement = document.querySelector(".cells");
-containerElement.innerHTML = "";
+
 //creo elemento da inserire 100 volte
 function gridLevel (limit){
+
+    containerElement.innerHTML = "";
 
     for (let i = 1; i <= limit; i++){
     
