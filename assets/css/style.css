@@ -28,3 +28,18 @@ body{
 #level{
     width: 75%;
 }
+
+.cells{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.single_cell{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid white;
+    padding: 2rem;
+    text-align: center;
+}

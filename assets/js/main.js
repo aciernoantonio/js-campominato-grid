@@ -2,23 +2,55 @@
 
 let playElement = document.getElementById("play");
 
-playElement = document.addEventListener("click", difficultLevel)
+playElement.addEventListener("click", difficultLevel);
 
 
-
+/* 
+    FUNCTION SECTION
+*/
 
 function difficultLevel(){
     let valore = document.getElementById("level").value;
     
     if (valore == "easy") {
-        console.log("è facile");
+        gridLevel(100);
 
     } else if (valore == "medium") {
-        console.log("è medio");
+        gridLevel(81);
+
     } else if (valore == "hard") {
-        console.log("è hard");
+        gridLevel(49);
     }
 }
+
+
+//genera una griglia di gioco quadrata
+
+//seleziono il container dove andranno le celle
+const containerElement = document.querySelector(".cells");
+containerElement.innerHTML = "";
+//creo elemento da inserire 100 volte
+function gridLevel (limit){
+
+    for (let i = 1; i <= limit; i++){
+    
+        let cellElement = document.createElement("div");
+        cellElement.textContent = i;
+        //aggiungo una classe all'elemento appena creato
+        cellElement.classList.add("single_cell");
+    
+        //appendo l'elemento al suo container
+        containerElement.append(cellElement);
+
+        cellElement.addEventListener("click", function() {
+            cellElement.style.backgroundColor = "cornflowerblue";
+        })
+    }
+
+}
+
+
+
 
 
 
